@@ -12,5 +12,6 @@
 *.ilk
 *.obj
 *.zip
+*.pyc
 Python/.idea/misc.xml
 Python/.idea/workspace.xml

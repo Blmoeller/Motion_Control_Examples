@@ -25,14 +25,14 @@ def main():
     else:
         os.add_dll_directory(r"C:\Program Files\Thorlabs\Kinesis")
 
-    lib: CDLL = cdll.LoadLibrary("Thorlabs.MotionControl.Benchtop.DCServo.dll")
+    lib: CDLL = cdll.LoadLibrary(r'C:\Program Files\Thorlabs\Kinesis\Thorlabs.MotionControl.GenericMotorCLI.dll')
 
     # Uncomment this line if you are using simulations
-    lib.TLI_InitializeSimulations()
+    # lib.TLI_InitializeSimulations()
 
     x_chan = c_short(1)
     # y_chan = c_short(2)
-    serial_num = c_char_p(b"105000001")
+    serial_num = c_char_p(b"106307594")
 
     # Open the device
     if lib.TLI_BuildDeviceList() == 0:
@@ -88,7 +88,7 @@ def main():
 
 
     # Uncomment this line if you are using simulations
-    lib.TLI_UninitializeSimulations()
+    # lib.TLI_UninitializeSimulations()
 
 
 if __name__ == "__main__":

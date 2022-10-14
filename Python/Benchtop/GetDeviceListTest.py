@@ -59,3 +59,4 @@ while messageID.value != 0 or messageType.value != 2:
 
 print("Homed")
 lib.BMC_ClearMessageQueue(serialNumber, 1)
+

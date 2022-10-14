@@ -12,7 +12,7 @@ import numpy as np
 # Add References to .NET libraries
 clr.AddReference("C:\\Program Files\\Thorlabs\\Kinesis\\Thorlabs.MotionControl.DeviceManagerCLI.dll")
 clr.AddReference("C:\\Program Files\\Thorlabs\\Kinesis\\Thorlabs.MotionControl.GenericMotorCLI.dll")
-clr.AddReference("C:\\Program Files\\Thorlabs\\Kinesis\\Thorlabs.MotionControl.Benchtop.DCServoCLI.dll.")
+clr.AddReference("C:\\Program Files\\Thorlabs\\Kinesis\\Thorlabs.MotionControl.Benchtop.DCServoCLI.dll")
 
 
 from Thorlabs.MotionControl.DeviceManagerCLI import *
@@ -31,7 +31,7 @@ def main():
 
         DeviceManagerCLI.BuildDeviceList()
         # create new device
-        serial_no = "101272674"  # Replace this line with your device's serial number
+        serial_no = "106307594"  # Replace this line with your device's serial number
 
         device = BenchtopDCServo.CreateBenchtopDCServo(serial_no)
 
